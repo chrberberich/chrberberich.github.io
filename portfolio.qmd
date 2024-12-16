@@ -1,0 +1,121 @@
+---
+title: ""
+runtime: shiny
+format: 
+   dashboard:
+      css: styles.css
+theme: darkly 
+
+---
+
+```{r, echo=FALSE}
+library(bslib)
+library(bsicons)
+library(shiny)
+```
+
+# Unemployment and Vacancies
+
+## Row 1 {height="32%"}
+
+### C1 {width="30%"}
+
+| ***Data Scource***                                      |
+|---------------------------------------------------------|
+| Bundesargentur für Arbeit                               |
+| Institut für Arbeitsmarkt- und Berufsforschung          |
+
+### C2 {width="30%"}
+
+```{r, echo=FALSE}
+value_box(
+  title = "Correlation Coefficient",
+  value = "0.8",
+  showcase = bsicons::bs_icon("graph-up"),
+  theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
+  class = "border"
+)
+```
+
+### C2 {width="30%"}
+
+```{r, echo=FALSE}
+value_box(
+  title = "R-squared",
+  value = "0.51",
+  showcase = bsicons::bs_icon("laptop"),
+  theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
+  class = "border"
+)
+```
+
+## Row 2 {height="68%"}
+
+### column 1
+
+<iframe src="portfolio/unemployment 1.html" width="100%" height="100%" style="border:none;">
+
+</iframe>
+
+### column 2
+
+<iframe src="portfolio/unemployment2.html" width="100%" height="100%" style="border:none;">
+
+</iframe>
+
+# Global GDP Comparison
+
+## Row 1 {height="100%"}
+
+
+
+<!-- Umschaltknopf -->
+<button id="toggleButton">change map/graph</button>
+
+<!-- Container für die iFrames -->
+<div id="iframeContainer">
+  <!-- Erstes iFrame -->
+  <iframe id="iframe1" src="portfolio/world map GDP white.svg" width="100%" height="500px" style="border:none;"></iframe>
+
+  <!-- Zweites iFrame (standardmäßig versteckt) -->
+  <iframe id="iframe2" src="portfolio/GDP_time.html" width="100%" height="500px" style="border:none; display:none;"></iframe>
+</div>
+
+<style>
+  /* Button-Styling */
+  #toggleButton {
+    background-color: white; /* Weiße Füllung */
+    color: black; /* Schwarzer Text */
+    border: 2px solid black; /* Schwarzer Rand */
+    border-radius: 5px; /* Runde Ecken */
+    padding: 5px 15px; /* Schmale Höhe und etwas Breite */
+    font-size: 14px; /* Schriftgröße anpassen */
+    cursor: pointer; /* Zeigt den Zeiger beim Hover */
+  }
+
+  /* Hover-Effekt */
+  #toggleButton:hover {
+    background-color: #f0f0f0; /* Helles Grau beim Hover */
+  }
+</style>
+
+<script>
+// JavaScript zum Umschalten der iFrames
+document.getElementById("toggleButton").addEventListener("click", function() {
+  // Beide iFrames holen
+  var iframe1 = document.getElementById("iframe1");
+  var iframe2 = document.getElementById("iframe2");
+
+  // Umschalten der Anzeige
+  if (iframe1.style.display === "none") {
+    iframe1.style.display = "block";
+    iframe2.style.display = "none";
+  } else {
+    iframe1.style.display = "none";
+    iframe2.style.display = "block";
+  }
+});
+</script>
+
+
+

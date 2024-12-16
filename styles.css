@@ -1,4 +1,6 @@
 /* css styles */
+
+
 .navbar {
     background: linear-gradient(to bottom, #f8f9fa, #e9ecef); /* Verlaufeffekt */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 3D-Schatten */
@@ -18,30 +20,37 @@
 }
 
 /* Stil für die aktive Seite */
-.navbar .active {
-    color: #ffffff; /* Weiße Schrift für die aktive Seite */
-    background-color: #343a40; /* Dunkler Hintergrund für die aktive Seite */
+.navbar .nav-item .nav-link.active {
+    color: #ffffff !important; /* Weiße Schrift für die aktive Seite */
+    background-color: #343a40 !important; /* Dunkler Hintergrund für die aktive Seite */
     text-shadow: none;
     box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.3); /* Vertiefter Effekt */
 }
 /* Styling für die Suchlupe */
-.navbar i.bi-search {
-    color: #000000; /* Standardfarbe */
-    font-size: 1.5em; /* Größe der Lupe */
-    padding: 10px;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Sanfter Übergang */
+.navbar #quarto-search.type-overlay .aa-Autocomplete svg.aa-SubmitIcon {
+    color: #000000 !important; /* Setze die Farbe auf Schwarz */
+  }
+
+  .navbar i.bi-search {
+    color: #000000 !important; /* Standardfarbe der Suchlupe */
+    font-size: 1.5em !important; /* Größe der Lupe */
+    padding: 10px !important;
+    transition: color 0.3s ease, background-color 0.3s ease !important; /* Sanfter Übergang */
 }
 
 /* Hover-Effekt für die Suchlupe */
 .navbar i.bi-search:hover {
-    color: #000000; /* Weiße Farbe bei Hover */
-    background-color: #343a40; /* Dunkler Hintergrund bei Hover */
-    border-radius: 50%; /* Runde Form */
+    color: #ffffff !important; /* Weiße Farbe bei Hover */
+    background-color: #343a40 !important; /* Dunkler Hintergrund bei Hover */
+    border-radius: 50% !important; /* Runde Form */
 }
 
 /* Fokuszustand für die Suchlupe */
 .navbar i.bi-search:focus {
-    color: #000000; /* Weiße Farbe bei Fokus */
-    background-color: #495057; /* Noch dunklerer Hintergrund bei Fokus */
-    border-radius: 50%;
+    color: #ffffff !important; /* Weiße Farbe bei Fokus */
+    background-color: #495057 !important; /* Noch dunklerer Hintergrund bei Fokus */
+    border-radius: 50% !important;
 }
+svg.aa-SubmitIcon {
+    color: #000000 !important;
+  }

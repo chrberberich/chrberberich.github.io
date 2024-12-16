@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "👋 Hi, I’m Christopher\n👀 I’m interested in Data Analysis with R, social science and economics 🌱 I’m currently try to dive deeper into R\n💞️ I’m looking to collaborate on … nothing at the moment ⚡ Fun fact: Originally learned precision mechanice and built a 3D printer as a so called masterpiece to get a degree as master craftsman (It’s something special in the German education system)."
+    "text": "Hi, I’m Christopher!\nI’m passionate about data analysis with R, as well as social science and economics. Right now, I’m building a portfolio here and will be gradually expanding it over time."
   },
   {
     "objectID": "stuff.html",
@@ -33,5 +33,54 @@
     "title": "Welcome To My Blog",
     "section": "",
     "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "portfolio.html#section-1",
+    "href": "portfolio.html#section-1",
+    "title": "Portfolio",
+    "section": "11",
+    "text": "11"
+  },
+  {
+    "objectID": "portfolio.html#section-2",
+    "href": "portfolio.html#section-2",
+    "title": "Portfolio",
+    "section": "2",
+    "text": "2\n\n2"
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "Mein interaktives Dashboard",
+    "section": "",
+    "text": "Warning: package 'bslib' was built under R version 4.4.2\n\n\n\nAttaching package: 'bslib'\n\n\nThe following object is masked from 'package:utils':\n\n    page\n\n\nWarning: package 'bsicons' was built under R version 4.4.2\n\n\nWarning: package 'shiny' was built under R version 4.4.2"
+  },
+  {
+    "objectID": "portfolio.html#row-1",
+    "href": "portfolio.html#row-1",
+    "title": "Mein interaktives Dashboard",
+    "section": "Row 1",
+    "text": "Row 1\n\nC1\n\n\n\nData Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nCorrelation Coefficient\n0.8\n\n\n\n\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nR-squared\n0.51"
+  },
+  {
+    "objectID": "portfolio.html#row-2",
+    "href": "portfolio.html#row-2",
+    "title": "Mein interaktives Dashboard",
+    "section": "Row 2",
+    "text": "Row 2\n\ncolumn 1\n\n\n\n\ncolumn 2"
+  },
+  {
+    "objectID": "portfolio.html#row-1-1",
+    "href": "portfolio.html#row-1-1",
+    "title": "Mein interaktives Dashboard",
+    "section": "Row 1",
+    "text": "Row 1"
+  },
+  {
+    "objectID": "portfolio.html#dynamische-graphiken",
+    "href": "portfolio.html#dynamische-graphiken",
+    "title": "Mein interaktives Dashboard",
+    "section": "Dynamische Graphiken",
+    "text": "Dynamische Graphiken\n\n\nWechseln zwischen den Graphiken"
   }
 ]
