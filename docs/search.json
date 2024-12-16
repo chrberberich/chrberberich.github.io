@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
+    "section": "",
+    "text": "👋 Hi, I’m Christopher\n👀 I’m interested in Data Analysis with R, social science and economics 🌱 I’m currently try to dive deeper into R\n💞️ I’m looking to collaborate on … nothing at the moment ⚡ Fun fact: Originally learned precision mechanice and built a 3D printer as a so called masterpiece to get a degree as master craftsman (It’s something special in the German education system)."
+  },
+  {
+    "objectID": "stuff.html",
+    "href": "stuff.html",
+    "title": "Other Stuff",
+    "section": "",
+    "text": "Nothing here :("
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  }
+]

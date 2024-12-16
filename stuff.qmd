@@ -1,0 +1,20 @@
+---
+title: "Other Stuff"
+image: ich.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter (X)
+      href: https://x.com/zukunftanders
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/cberberich.bsky.social
+    - icon: Instagram
+      text: Instagram
+      href: https://www.instagram.com/zukunftandersdenken/
+    
+
+---
+
+Nothing here :(

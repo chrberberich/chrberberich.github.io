@@ -1,0 +1,28 @@
+---
+title: "About Me"
+image: ich.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter (X)
+      href: https://x.com/zukunftanders
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/cberberich.bsky.social
+    - icon: Instagram
+      text: Instagram
+      href: https://www.instagram.com/zukunftandersdenken/
+---
+
+
+
+👋 Hi, I’m Christopher
+
+👀 I’m interested in Data Analysis with R, social science and economics
+
+🌱 I’m currently try to dive deeper into R
+
+💞️ I’m looking to collaborate on ... nothing at the moment
+
+⚡ Fun fact: Originally learned precision mechanice and built a 3D printer as a so called masterpiece to get a degree as master craftsman (It's something special in the German education system).

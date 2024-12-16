@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  title: "Christopher Berberich"
+  navbar:
+    left: 
+      - text: "About Me"
+        file: "index.qmd"
+      - text: "Other Stuff"
+        file: "stuff.qmd"
+    right:
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+      - icon: bi-search
+format:
+  html:
+    theme: darkly
+    css: styles.css
+
+
+
