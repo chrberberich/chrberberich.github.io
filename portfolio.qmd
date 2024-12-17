@@ -30,7 +30,7 @@ library(shiny)
 ```{r, echo=FALSE}
 value_box(
   title = "Correlation Coefficient",
-  value = "0.8",
+  value = "-0.71",
   showcase = bsicons::bs_icon("graph-up"),
   theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
   class = "border"
@@ -53,7 +53,7 @@ value_box(
 
 ### column 1
 
-<iframe src="portfolio/unemployment 1.html" width="100%" height="100%" style="border:none;">
+<iframe src="portfolio/unemployment1.html" width="100%" height="100%" style="border:none;">
 
 </iframe>
 
@@ -67,8 +67,6 @@ value_box(
 
 ## Row 1 {height="100%"}
 
-
-
 <!-- Umschaltknopf -->
 <button id="toggleButton">change map/graph</button>
 
@@ -78,7 +76,7 @@ value_box(
   <iframe id="iframe1" src="portfolio/world map GDP white.svg" width="100%" height="500px" style="border:none;"></iframe>
 
   <!-- Zweites iFrame (standardmäßig versteckt) -->
-  <iframe id="iframe2" src="portfolio/GDP_time.html" width="100%" height="500px" style="border:none; display:none;"></iframe>
+  <iframe id="iframe2" src="portfolio/GDP_time.html" width="100%" height="850px" style="border:none; display:none;"></iframe>
 </div>
 
 <style>
@@ -116,6 +114,3 @@ document.getElementById("toggleButton").addEventListener("click", function() {
   }
 });
 </script>
-
-
-
