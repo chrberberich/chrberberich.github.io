@@ -49,7 +49,7 @@ value_box(
 )
 ```
 
-## Row 2 {height="68%"}
+## Row 2 {height="100%"}
 
 ### column 1
 
@@ -65,7 +65,7 @@ value_box(
 
 # Global GDP Comparison
 
-## Row 1 {height="100%"}
+## Row 1 {height="80%"}
 
 <!-- Umschaltknopf -->
 <button id="toggleButton">change map/graph</button>
@@ -73,13 +73,15 @@ value_box(
 <!-- Container für die iFrames -->
 <div id="iframeContainer">
   <!-- Erstes iFrame -->
-  <iframe id="iframe1" src="portfolio/world map GDP white.svg" width="100%" height="500px" style="border:none;"></iframe>
+  <iframe id="iframe1" src="portfolio/world map GDP trans.svg" width="100%" height="820px" style="border:none;"></iframe>
 
   <!-- Zweites iFrame (standardmäßig versteckt) -->
-  <iframe id="iframe2" src="portfolio/GDP_time.html" width="100%" height="850px" style="border:none; display:none;"></iframe>
+  <iframe id="iframe2" src="portfolio/GDP_time trans.svg" width="100%" height="820px" style="border:none; display:none;"></iframe>
 </div>
 
+
 <style>
+
   /* Button-Styling */
   #toggleButton {
     background-color: white; /* Weiße Füllung */
@@ -89,12 +91,16 @@ value_box(
     padding: 5px 15px; /* Schmale Höhe und etwas Breite */
     font-size: 14px; /* Schriftgröße anpassen */
     cursor: pointer; /* Zeigt den Zeiger beim Hover */
+    width: 300px;
+    margin-bottom: 20px; /* Abstand zum iFrame-Container */
   }
 
   /* Hover-Effekt */
   #toggleButton:hover {
     background-color: #f0f0f0; /* Helles Grau beim Hover */
   }
+
+
 </style>
 
 <script>
@@ -114,3 +120,7 @@ document.getElementById("toggleButton").addEventListener("click", function() {
   }
 });
 </script>
+
+# Economic Voting
+
+coming soon!
