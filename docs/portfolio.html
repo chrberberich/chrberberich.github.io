@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
     </button>    
 
 
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-unemployment-and-vacancies" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#unemployment-and-vacancies" data-scrolling="false" href="#unemployment-and-vacancies" aria-controls="unemployment-and-vacancies" aria-selected="true"><span class="nav-link-text">Unemployment and Vacancies</span></a></li><li class="nav-item" role="presentation"><a id="tab-global-gdp-comparison" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#global-gdp-comparison" data-scrolling="false" href="#global-gdp-comparison" aria-controls="global-gdp-comparison" aria-selected="false"><span class="nav-link-text">Global GDP Comparison</span></a></li></ul></div></div></nav>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-unemployment-and-vacancies" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#unemployment-and-vacancies" data-scrolling="false" href="#unemployment-and-vacancies" aria-controls="unemployment-and-vacancies" aria-selected="true"><span class="nav-link-text">Unemployment and Vacancies</span></a></li><li class="nav-item" role="presentation"><a id="tab-global-gdp-comparison" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#global-gdp-comparison" data-scrolling="false" href="#global-gdp-comparison" aria-controls="global-gdp-comparison" aria-selected="false"><span class="nav-link-text">Global GDP Comparison</span></a></li><li class="nav-item" role="presentation"><a id="tab-economic-voting" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#economic-voting" data-scrolling="false" href="#economic-voting" aria-controls="economic-voting" aria-selected="false"><span class="nav-link-text">Economic Voting</span></a></li></ul></div></div></nav>
 </header></header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-layout-custom page-navbar quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">
@@ -155,7 +155,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div class="bslib-grid-item html-fill-item tab-content bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div id="unemployment-and-vacancies" class="dashboard-page tab-pane show active html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-unemployment-and-vacancies">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 32fr) minmax(3em, 68fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 32fr) minmax(3em, 100fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 30fr) minmax(3em, 30fr) minmax(3em, 30fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
@@ -234,7 +234,7 @@ grid-auto-rows: minmax(0, 1fr);">
 </div>
 </div>
 <div id="global-gdp-comparison" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-global-gdp-comparison">
-<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 100fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 80fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr);
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
@@ -245,10 +245,11 @@ change map/graph
 </button>
 <!-- Container für die iFrames -->
 <div id="iframeContainer" class="html-fill-item html-fill-container">
-<p><!-- Erstes iFrame --> <iframe id="iframe1" src="portfolio/world map GDP white.svg" width="100%" height="500px" style="border:none;"></iframe></p>
-<p><!-- Zweites iFrame (standardmäßig versteckt) --> <iframe id="iframe2" src="portfolio/GDP_time.html" width="100%" height="850px" style="border:none; display:none;"></iframe></p>
+<p><!-- Erstes iFrame --> <iframe id="iframe1" src="portfolio/world map GDP trans.svg" width="100%" height="820px" style="border:none;"></iframe></p>
+<p><!-- Zweites iFrame (standardmäßig versteckt) --> <iframe id="iframe2" src="portfolio/GDP_time trans.svg" width="100%" height="820px" style="border:none; display:none;"></iframe></p>
 </div>
 <style>
+
   /* Button-Styling */
   #toggleButton {
     background-color: white; /* Weiße Füllung */
@@ -258,12 +259,16 @@ change map/graph
     padding: 5px 15px; /* Schmale Höhe und etwas Breite */
     font-size: 14px; /* Schriftgröße anpassen */
     cursor: pointer; /* Zeigt den Zeiger beim Hover */
+    width: 300px;
+    margin-bottom: 20px; /* Abstand zum iFrame-Container */
   }
 
   /* Hover-Effekt */
   #toggleButton:hover {
     background-color: #f0f0f0; /* Helles Grau beim Hover */
   }
+
+
 </style>
 <script>
 // JavaScript zum Umschalten der iFrames
@@ -288,9 +293,26 @@ document.getElementById("toggleButton").addEventListener("click", function() {
     <span class="bslib-full-screen-enter badge rounded-pill">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
     </span>
-</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
-
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
+</div>
+</div>
+<div id="economic-voting" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-economic-voting">
+<div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-body html-fill-item html-fill-container">
+<p>coming soon!</p>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+
+
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden html-fill-item html-fill-container">
+
 </div>
 </div>
 </div>
