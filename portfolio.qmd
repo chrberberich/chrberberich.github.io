@@ -1,11 +1,10 @@
 ---
 title: ""
-runtime: shiny
 format: 
    dashboard:
       css: styles.css
+scrolling: true
 theme: darkly 
-
 ---
 
 ```{r, echo=FALSE}
@@ -13,6 +12,9 @@ library(bslib)
 library(bsicons)
 library(shiny)
 ```
+<nav class="navbar navbar-dashboard">
+    <!-- Inhalt der Navbar -->
+</nav>
 
 # Unemployment and Vacancies
 
@@ -20,10 +22,10 @@ library(shiny)
 
 ### C1 {width="30%"}
 
-| ***Data Scource***                                      |
-|---------------------------------------------------------|
-| Bundesargentur für Arbeit                               |
-| Institut für Arbeitsmarkt- und Berufsforschung          |
+| ***Data Scource***                             |
+|------------------------------------------------|
+| Bundesargentur für Arbeit                      |
+| Institut für Arbeitsmarkt- und Berufsforschung |
 
 ### C2 {width="30%"}
 
@@ -49,6 +51,12 @@ value_box(
 )
 ```
 
+## Row 1
+
+**Unemployment and job vacancies**
+
+The economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model.
+
 ## Row 2 {height="100%"}
 
 ### column 1
@@ -65,21 +73,41 @@ value_box(
 
 # Global GDP Comparison
 
-## Row 1 {height="80%"}
+## Über dieses Projekt {.sidebar position="left" width="30%"}
+
+**Über dieses Projekt**
+
+This little project has the background to demonstrate my advanced data visualization skills. The world map shows the GDP in 2023 as a headmap based on a data set from the World Bank. The challenge was not only of a technical nature. Due to the fact that the USA and China are extremely strong compared to all other countries, it is not easy to show this as a heat map. Without a few tricks in the color scaling, the rest would not differ in color due to this extreme inequality.
+
+The “change map/graph” button can be used to switch to a plot of the trend data for the six strongest economies. The trend also gives an impression of the inequality which the color scaling problem causes.
+
+## Plots
 
 <!-- Umschaltknopf -->
-<button id="toggleButton">change map/graph</button>
+
+<button id="toggleButton">
+
+change map/graph
+
+</button>
 
 <!-- Container für die iFrames -->
-<div id="iframeContainer">
-  <!-- Erstes iFrame -->
-  <iframe id="iframe1" src="portfolio/world map GDP trans.svg" width="100%" height="820px" style="border:none;"></iframe>
 
-  <!-- Zweites iFrame (standardmäßig versteckt) -->
-  <iframe id="iframe2" src="portfolio/GDP_time trans.svg" width="100%" height="820px" style="border:none; display:none;"></iframe>
-</div>
+::: {#iframeContainer}
+<!-- Erstes iFrame -->
 
+<iframe id="iframe1" src="portfolio/world map GDP trans.svg" width="100%" height="700px" style="border:none;">
 
+</iframe>
+
+<!-- Zweites iFrame (standardmäßig versteckt) -->
+
+<iframe id="iframe2" src="portfolio/GDP_time trans.svg" width="100%" height="700px" style="border:none; display:none;">
+
+</iframe>
+:::
+
+```{=html}
 <style>
 
   /* Button-Styling */
@@ -102,7 +130,9 @@ value_box(
 
 
 </style>
+```
 
+```{=html}
 <script>
 // JavaScript zum Umschalten der iFrames
 document.getElementById("toggleButton").addEventListener("click", function() {
@@ -120,7 +150,61 @@ document.getElementById("toggleButton").addEventListener("click", function() {
   }
 });
 </script>
+```
 
 # Economic Voting
 
-coming soon!
+## Row 1
+
+**Economic voting in the Merkel era**
+
+Here are a few multivariate logistic regression models from my final thesis visualized, which show the effects of economic voting on the CDU/CSU as chancellor party during Angela Merkel's chancellorship. The Avarage Marginal Effects (AME) are shown in percent. An example: An AME of 30% means that the probability of voting for the CDU/CSU increases by 30% on average if the variable increases by one unit (please note that the dummy variables can only take the values 0 or 1). Below the plots, the variables are explained.
+
+The result is that economic voting only had an impact in the crisis years 2009 and 2021. However, the situation in 2021 is not so valid, because the confidence interval is close to the null hypothesis. null hypothesis in this case means the absence of an effect; Confidence intervals provide information about the range within which the true effect at the population level lies, given the data and the chosen level of confidence (here 95%). Nevertheless, the models make very good predictions, as they contain a very strong predictor in the form of party identif
+
+The data comes from the following data sets:
+
+GLES, 2019a: Post-election Cross Section (GLES 2009). ZA5301, Köln: GESIS.
+
+GLES, 2019b: Post-election Cross Section (GLES 2013). ZA5701, Köln: GESIS.
+
+GLES, 2019c: Post-election Cross Section (GLES 2017). ZA6801, Köln: GESIS.
+
+GLES, 2023: Post-election Cross Section (GLES 2021). ZA7701, Köln: GESIS
+
+## Row 2
+
+**Models with variables for the personal economic situation**
+
+<iframe src="portfolio/Micro_interactive.html" width="100%" height="1000px" style="border:none;">
+
+</iframe>
+
+## Row 3
+
+**Models with variables for the subjective perception of the general economic situation**
+
+<iframe src="portfolio/Macro_interactive.html" width="100%" height="1000px" style="border:none;">
+
+</iframe>
+
+## Row 4
+
+**Explenation of the variables**
+
+| Variable | Explenation |
+|----|----|
+| **Dependent variable** |  |
+| CDU/CSU | The dummy variable takes the value 1 if the respondents stated that they had voted for the CDU or CSU in the last election. If a different party or non-voters are indicated, the variable takes the value 0. |
+| **Predictors** |  |
+| Micro increase | Dummy variable assumes the value 1 if the respondent states that their personal economic situation has improved in the last one to two years. Reference 0 if the situation has not changed. |
+| Micro decrease | Dummy variable assumes the value 1 if the respondent states that their personal economic situation has deteriorated in the last one to two years. Reference 0 if the situation has not changed. |
+| Macro increase | Dummy variable assumes the value 1 if the respondent assumes that the general economy has increased in the last one to two years. Reference 0 if the situation has not changed. |
+| Macro decrease | Dummy variable assumes the value 1 if the respondent assumes that the general economy situation has decreased in the last one to two years. Reference 0 if the situation has not changed. |
+| Gender | Dummy variable that has the value 1 if the respondent is male. Otherwise, the value is 0. The diverse category only exists in the GLES 2021, but there are no people in this category. |
+| Age | Categorical variable with the following age categories: (1) 18 to under 23 years (2) 23 to under 28 years (3) 28 to under 33 years (4) 33 to under 38 years (5) 38 to under 43 years (6) 43 to under 48 years (7) 48 to under 53 years (8) 53 to under 58 years (9) 58 to under 63 years (10) 63 to under 68 years (11) 68 to under 73 years (12) 78 to under 83 years (13) 83 to under 88 years (14) 88 to under 93 years (15) Over 93 years |
+| East | Dummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0. |
+| Education | Categorical variable. |
+| Income | Income refers to the total household income and is divided into the following categories: (1) less than 500 euros (2) 500 to under 750 euros (3) 750 to under 1000 euros (4) 1000 to under 1250 euros (5) 1250 to under 1500 euros (6) 1500 to under 2000 euros (7) 2000 to under 2500 euros (8) 2500 to under 3000 euros (9) 3000 to under 4000 euros (10) 4000 to under 5000 euros (11) 5000 to under 7500 euros (12) 7500 to under 10000 euros (13) 10000 euros and more |
+| Cohabitors | Number of household members. Category 0 includes people who did not provide any information. |
+| Identification | Dummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0. |

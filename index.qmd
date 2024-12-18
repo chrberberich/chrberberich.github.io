@@ -2,8 +2,11 @@
 title: "About Me"
 image: ich.jpg
 about:
-  template: jolla
+  template: trestles
   links:
+    - icon: github
+      text: Github
+      href: https://github.com/chrberberich
     - icon: twitter
       text: Twitter (X)
       href: https://x.com/zukunftanders
@@ -12,9 +15,11 @@ about:
       href: https://bsky.app/profile/cberberich.bsky.social
     - icon: Instagram
       text: Instagram
-      href: https://www.instagram.com/zukunftandersdenken/
+      href: https://www.instagram.com/zukunftandersdenken/  
 ---
 
 Hi, I'm Christopher!
 
-I'm passionate about data analysis with R, as well as social science and economics. Right now, I'm building a portfolio here and will be gradually expanding it over time.
+I'm passionate about analising data with R with a focus on social science and economics. Right now, I'm building a portfolio here and will be gradually expanding it over time.
+
+Feel free to explore my work, and don't hesitate to reach out if you're interested in collaborating or learning more about my skills.
