@@ -79,6 +79,34 @@
     top: 1em; /* Position des unteren Strichs */
 }
 
+.navbar-toggler-icon {
+    background-image: none; /* Entfernt das Bootstrap-Standard-Icon */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    position: relative;
+    display: block;
+    height: 20px; /* Höhe des gesamten Icons */
+    width: 30px;  /* Breite des gesamten Icons */
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    background-color: black; /* Farbe der Striche */
+    height: 2px;
+    width: 100%;
+}
+
+.navbar-toggler-icon::before {
+    top: 8px; /* Position des mittleren Strichs */
+}
+
+.navbar-toggler-icon::after {
+    top: 16px; /* Position des unteren Strichs */
+}
+
 svg.aa-SubmitIcon {
     color: #000000 !important;
   }
