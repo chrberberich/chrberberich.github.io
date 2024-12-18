@@ -51,32 +51,11 @@
     background-color: #495057 !important; /* Noch dunklerer Hintergrund bei Fokus */
     border-radius: 50% !important;
 }
+
+/* Standard Bootstrap Navbar Toggler Icon */
 .navbar-toggler-icon {
-    background-image: none !important; /* Entfernt das Bootstrap-Standard-Icon */
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    position: relative;
-    display: block;
-    height: 1.5em;  /* Höhe basierend auf der Schriftgröße der navbar */
-    width: 2.5em;   /* Breite basierend auf der Schriftgröße der navbar */
-}
-
-.navbar-toggler-icon::before,
-.navbar-toggler-icon::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    background-color: black; /* Farbe der Striche */
-    height: 0.2em;
-    width: 100%;
-}
-
-.navbar-toggler-icon::before {
-    top: 0.5em; /* Position des mittleren Strichs */
-}
-
-.navbar-toggler-icon::after {
-    top: 1em; /* Position des unteren Strichs */
+    background-color: darkgrey;  /* Setzt die Hintergrundfarbe auf schwarz */
+    border: none;  /* Entfernt den Standardrahmen */
 }
 
 svg.aa-SubmitIcon {
