@@ -54,7 +54,7 @@
 
 /* Standard Bootstrap Navbar Toggler Icon */
 .navbar-toggler-icon {
-    background-color: darkgrey;  /* Setzt die Hintergrundfarbe auf schwarz */
+    background-color: grey;  /* Setzt die Hintergrundfarbe auf schwarz */
     border: none;  /* Entfernt den Standardrahmen */
 }
 
