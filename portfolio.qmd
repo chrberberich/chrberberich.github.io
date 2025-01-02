@@ -11,13 +11,14 @@ theme: darkly
 library(bslib)
 library(bsicons)
 library(shiny)
+library(ggplot2)
 ```
 
-<nav class="navbar navbar-dashboard">
+# Welcome
 
-<!-- Inhalt der Navbar -->
+blabla
 
-</nav>
+![](images/Blitz-9.svg){fig-align="center"}
 
 # Unemployment and Vacancies
 
@@ -99,13 +100,14 @@ change map/graph
 ::: {#iframeContainer}
 <!-- Erstes Bild -->
 
-![](portfolio/world map GDP white.svg){#iframe1 width="80%" style="border:none;  display:block; margin: 0 auto;"}
+![](portfolio/world%20map%20GDP%20white.svg){#iframe1 width="80%" style="border:none;  display:block; margin: 0 auto;"}
 
 <!-- Zweites Bild (standardmäßig versteckt) -->
 
-![](portfolio/GDP_time white.svg){#iframe2 width="83%" style="border:none;  display:block; margin: 0 auto;"}
+![](portfolio/GDP_time%20white.svg){#iframe2 width="83%" style="border:none;  display:block; margin: 0 auto;"}
 :::
 
+```{=html}
 <style>
 
   /* Button-Styling */
@@ -128,6 +130,9 @@ change map/graph
 
 
 </style>
+```
+
+```{=html}
 <script>
 // JavaScript zum Umschalten der iFrames
 document.getElementById("toggleButton").addEventListener("click", function() {
@@ -145,6 +150,7 @@ document.getElementById("toggleButton").addEventListener("click", function() {
   }
 });
 </script>
+```
 
 # Economic Voting
 

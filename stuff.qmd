@@ -3,15 +3,9 @@ title: "Other Stuff"
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter (X)
-      href: https://x.com/zukunftanders
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/profile/cberberich.bsky.social
-    - icon: Instagram
-      text: Instagram
-      href: https://www.instagram.com/zukunftandersdenken/
+    - icon: github
+      text: Github
+      href: https://github.com/chrberberich
 ---
 
 Nothing here :(
