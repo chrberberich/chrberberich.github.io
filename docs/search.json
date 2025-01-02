@@ -51,30 +51,30 @@
   {
     "objectID": "portfolio.html",
     "href": "portfolio.html",
-    "title": "Mein interaktives Dashboard",
+    "title": "Unemployment and Vacancies",
     "section": "",
-    "text": "Warning: package 'bslib' was built under R version 4.4.2\n\n\n\nAttaching package: 'bslib'\n\n\nThe following object is masked from 'package:utils':\n\n    page\n\n\nWarning: package 'bsicons' was built under R version 4.4.2\n\n\nWarning: package 'shiny' was built under R version 4.4.2"
+    "text": "Data Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrelation Coefficient\n-0.71\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR-squared\n0.51\n\n\n\n\n\n\n\n\n\n\n\nUnemployment and job vacancies\nThe economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model."
   },
   {
     "objectID": "portfolio.html#row-1",
     "href": "portfolio.html#row-1",
-    "title": "Mein interaktives Dashboard",
-    "section": "Row 1",
-    "text": "Row 1\n\nC1\n\n\n\nData Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nCorrelation Coefficient\n0.8\n\n\n\n\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nR-squared\n0.51"
+    "title": "Unemployment and Vacancies",
+    "section": "",
+    "text": "Data Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrelation Coefficient\n-0.71\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR-squared\n0.51"
   },
   {
     "objectID": "portfolio.html#row-2",
     "href": "portfolio.html#row-2",
-    "title": "Mein interaktives Dashboard",
+    "title": "Welcome",
     "section": "Row 2",
     "text": "Row 2\n\ncolumn 1\n\n\n\n\ncolumn 2"
   },
   {
     "objectID": "portfolio.html#row-1-1",
     "href": "portfolio.html#row-1-1",
-    "title": "Mein interaktives Dashboard",
-    "section": "Row 1",
-    "text": "Row 1"
+    "title": "Unemployment and Vacancies",
+    "section": "",
+    "text": "Unemployment and job vacancies\nThe economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model."
   },
   {
     "objectID": "portfolio.html#dynamische-graphiken",
@@ -82,5 +82,40 @@
     "title": "Mein interaktives Dashboard",
     "section": "Dynamische Graphiken",
     "text": "Dynamische Graphiken\n\n\nWechseln zwischen den Graphiken"
+  },
+  {
+    "objectID": "portfolio.html#über-dieses-projekt",
+    "href": "portfolio.html#über-dieses-projekt",
+    "title": "Unemployment and Vacancies",
+    "section": "Über dieses Projekt",
+    "text": "Über dieses Projekt\nÜber dieses Projekt\nThis little project has the background to demonstrate my advanced data visualization skills. The world map shows the GDP in 2023 as a headmap based on a data set from the World Bank. The challenge was not only of a technical nature. Due to the fact that the USA and China are extremely strong compared to all other countries, it is not easy to show this as a heat map. Without a few tricks in the color scaling, the rest would not differ in color due to this extreme inequality.\nThe “change map/graph” button can be used to switch to a plot of the trend data for the six strongest economies. The trend also gives an impression of the inequality which the color scaling problem causes."
+  },
+  {
+    "objectID": "portfolio.html#plots",
+    "href": "portfolio.html#plots",
+    "title": "Unemployment and Vacancies",
+    "section": "Plots",
+    "text": "Plots\n\n\nchange map/graph"
+  },
+  {
+    "objectID": "portfolio.html#row-1-2",
+    "href": "portfolio.html#row-1-2",
+    "title": "Unemployment and Vacancies",
+    "section": "Row 1",
+    "text": "Row 1\nEconomic voting in the Merkel era\nHere are a few multivariate logistic regression models from my final thesis visualized, which show the effects of economic voting on the CDU/CSU as chancellor party during Angela Merkel’s chancellorship. The Avarage Marginal Effects (AME) are shown in percent. An example: An AME of 30% means that the probability of voting for the CDU/CSU increases by 30% on average if the variable increases by one unit (please note that the dummy variables can only take the values 0 or 1). Below the plots, the variables are explained.\nThe result is that economic voting only had an impact in the crisis years 2009 and 2021. However, the situation in 2021 is not so valid, because the confidence interval is close to the null hypothesis. null hypothesis in this case means the absence of an effect; Confidence intervals provide information about the range within which the true effect at the population level lies, given the data and the chosen level of confidence (here 95%). Nevertheless, the models make very good predictions, as they contain a very strong predictor in the form of party identif\nThe data comes from the following data sets:\nGLES, 2019a: Post-election Cross Section (GLES 2009). ZA5301, Köln: GESIS.\nGLES, 2019b: Post-election Cross Section (GLES 2013). ZA5701, Köln: GESIS.\nGLES, 2019c: Post-election Cross Section (GLES 2017). ZA6801, Köln: GESIS.\nGLES, 2023: Post-election Cross Section (GLES 2021). ZA7701, Köln: GESIS"
+  },
+  {
+    "objectID": "portfolio.html#row-2-1",
+    "href": "portfolio.html#row-2-1",
+    "title": "Unemployment and Vacancies",
+    "section": "Row 2",
+    "text": "Row 2\n\nCol 1\nModels with variables for the personal economic situation\n\n\n\nCol 2\nModels with variables for the subjective perception of the general economic situation"
+  },
+  {
+    "objectID": "portfolio.html#row-3",
+    "href": "portfolio.html#row-3",
+    "title": "Unemployment and Vacancies",
+    "section": "Row 3",
+    "text": "Row 3\nExplenation of the variables\n\n\n\n\n\n\n\nVariable\nExplenation\n\n\n\n\nDependent variable\n\n\n\nCDU/CSU\nThe dummy variable takes the value 1 if the respondents stated that they had voted for the CDU or CSU in the last election. If a different party or non-voters are indicated, the variable takes the value 0.\n\n\nPredictors\n\n\n\nMicro increase\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has improved in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMicro decrease\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has deteriorated in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro increase\nDummy variable assumes the value 1 if the respondent assumes that the general economy has increased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro decrease\nDummy variable assumes the value 1 if the respondent assumes that the general economy situation has decreased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nGender\nDummy variable that has the value 1 if the respondent is male. Otherwise, the value is 0. The diverse category only exists in the GLES 2021, but there are no people in this category.\n\n\nAge\nCategorical variable with the following age categories: (1) 18 to under 23 years (2) 23 to under 28 years (3) 28 to under 33 years (4) 33 to under 38 years (5) 38 to under 43 years (6) 43 to under 48 years (7) 48 to under 53 years (8) 53 to under 58 years (9) 58 to under 63 years (10) 63 to under 68 years (11) 68 to under 73 years (12) 78 to under 83 years (13) 83 to under 88 years (14) 88 to under 93 years (15) Over 93 years\n\n\nEast\nDummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0.\n\n\nEducation\nCategorical variable.\n\n\nIncome\nIncome refers to the total household income and is divided into the following categories: (1) less than 500 euros (2) 500 to under 750 euros (3) 750 to under 1000 euros (4) 1000 to under 1250 euros (5) 1250 to under 1500 euros (6) 1500 to under 2000 euros (7) 2000 to under 2500 euros (8) 2500 to under 3000 euros (9) 3000 to under 4000 euros (10) 4000 to under 5000 euros (11) 5000 to under 7500 euros (12) 7500 to under 10000 euros (13) 10000 euros and more\n\n\nCohabitors\nNumber of household members. Category 0 includes people who did not provide any information.\n\n\nIdentification\nDummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0."
   }
 ]
