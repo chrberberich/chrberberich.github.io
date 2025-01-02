@@ -6,16 +6,7 @@ about:
   links:
     - icon: github
       text: Github
-      href: https://github.com/chrberberich
-    - icon: twitter
-      text: Twitter (X)
-      href: https://x.com/zukunftanders
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/profile/cberberich.bsky.social
-    - icon: Instagram
-      text: Instagram
-      href: https://www.instagram.com/zukunftandersdenken/  
+      href: https://github.com/chrberberich  
 ---
 
 Hi, I'm Christopher!

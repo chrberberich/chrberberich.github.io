@@ -14,12 +14,6 @@ library(shiny)
 library(ggplot2)
 ```
 
-# Welcome
-
-blabla
-
-![](images/Blitz-9.svg){fig-align="center"}
-
 # Unemployment and Vacancies
 
 ## Row 1 {height="32%"}
@@ -104,7 +98,7 @@ change map/graph
 
 <!-- Zweites Bild (standardmäßig versteckt) -->
 
-![](portfolio/GDP_time%20white.svg){#iframe2 width="83%" style="border:none;  display:block; margin: 0 auto;"}
+![](portfolio/GDP_time%20white.svg){#iframe2 width="83%" style="border:none;  display:none; margin: 0 auto;"}
 :::
 
 ```{=html}
