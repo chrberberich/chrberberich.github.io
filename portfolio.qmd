@@ -194,9 +194,10 @@ GLES, 2023: Post-election Cross Section (GLES 2021). ZA7701, Köln: GESIS
 | Macro increase | Dummy variable assumes the value 1 if the respondent assumes that the general economy has increased in the last one to two years. Reference 0 if the situation has not changed. |
 | Macro decrease | Dummy variable assumes the value 1 if the respondent assumes that the general economy situation has decreased in the last one to two years. Reference 0 if the situation has not changed. |
 | Gender | Dummy variable that has the value 1 if the respondent is male. Otherwise, the value is 0. The diverse category only exists in the GLES 2021, but there are no people in this category. |
-| Age | Categorical variable with the following age categories: (1) 18 to under 23 years (2) 23 to under 28 years (3) 28 to under 33 years (4) 33 to under 38 years (5) 38 to under 43 years (6) 43 to under 48 years (7) 48 to under 53 years (8) 53 to under 58 years (9) 58 to under 63 years (10) 63 to under 68 years (11) 68 to under 73 years (12) 78 to under 83 years (13) 83 to under 88 years (14) 88 to under 93 years (15) Over 93 years |
+| Age | Age measured in years |
 | East | Dummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0. |
-| Education | Categorical variable. |
-| Income | Income refers to the total household income and is divided into the following categories: (1) less than 500 euros (2) 500 to under 750 euros (3) 750 to under 1000 euros (4) 1000 to under 1250 euros (5) 1250 to under 1500 euros (6) 1500 to under 2000 euros (7) 2000 to under 2500 euros (8) 2500 to under 3000 euros (9) 3000 to under 4000 euros (10) 4000 to under 5000 euros (11) 5000 to under 7500 euros (12) 7500 to under 10000 euros (13) 10000 euros and more |
-| Cohabitors | Number of household members. Category 0 includes people who did not provide any information. |
-| Identification | Dummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0. |
+| Education Realschule | Respondents with an intermediate school certificate have a score of 1. |
+| Education Fachabitur |  Respondents with a vocational diploma certificate have a score of 1. |
+| Education Abitur | Respondents with a general qualification for university entrance have a score of 1. |
+| Income | Net equivalent income. Household income was weighted according to the new OECD scale. As the household income in the data sets, with the exception of GLES2009, was only available in categorical form, the income categories were transformed into a metric scale beforehand. The recommendations published by GESIS, which are available at https://www.gesis.org/missy/files/documents/MZ/Auswertungsbeispiel_BerechnungDes%C3%84quivalenzeinkommens.pdf, were followed. |
+| Party Identification | Dummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0. |
