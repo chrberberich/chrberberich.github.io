@@ -29,8 +29,8 @@ library(ggplot2)
 
 ```{r, echo=FALSE}
 value_box(
-  title = "Correlation Coefficient",
-  value = "-0.71",
+  title = "Marginal R\u00B2",
+  value = "0.49",
   showcase = bsicons::bs_icon("graph-up"),
   theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
   class = "border"
@@ -41,8 +41,8 @@ value_box(
 
 ```{r, echo=FALSE}
 value_box(
-  title = "R-squared",
-  value = "0.51",
+  title = "Conditional R\u00B2",
+  value = "0.84",
   showcase = bsicons::bs_icon("laptop"),
   theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
   class = "border"
@@ -69,6 +69,36 @@ The economist Maurice Höfgen often points out that there are more unemployed pe
 
 </iframe>
 
+## Row 3
+
+Since time series data typically have a problem with autocorrelation—and that is also the case here—I used a random intercept model. The residuals are not normally distributed and there may be slight heteroscedasticity. To avoid problems with estimating the confidence intervals, I reported bootstrap CIs in the regression table below.
+
+## Row 4
+
+<div class="table-container" style="color: white;">
+<table style="text-align:center;">
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+  <tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+  <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+  <tr><td style="text-align:left"></td><td>total_unemp</td></tr>
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+  <tr><td style="text-align:left">total_vac</td><td>-0.687</td></tr>
+  <tr><td style="text-align:left"></td><td>[-0.913, -0.455]</td></tr>
+  <tr><td style="text-align:left"></td><td></td></tr>
+  <tr><td style="text-align:left">Constant</td><td>3308</td></tr>
+  <tr><td style="text-align:left"></td><td>[3078, 3526]</td></tr>
+  <tr><td style="text-align:left"></td><td></td></tr>
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+  <tr><td style="text-align:left">Marginal R²</td><td>0.487</td></tr>
+  <tr><td style="text-align:left">Conditional R²</td><td>0.838</td></tr>
+  <tr><td style="text-align:left">Observations</td><td>58</td></tr>
+  <tr><td style="text-align:left">Log Likelihood</td><td>-369.605</td></tr>
+  <tr><td style="text-align:left">Akaike Inf. Crit.</td><td>747.211</td></tr>
+  <tr><td style="text-align:left">Bayesian Inf. Crit.</td><td>755.452</td></tr>
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+  <tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right">Coefficients and 95% confidence intervals estimated using 2000 bootstrap resamples.</td></tr>
+</table>
+</div>
 # Global GDP Comparison
 
 ## Über dieses Projekt {.sidebar position="left" width="30%"}
@@ -197,7 +227,7 @@ GLES, 2023: Post-election Cross Section (GLES 2021). ZA7701, Köln: GESIS
 | Age | Age measured in years |
 | East | Dummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0. |
 | Education Realschule | Respondents with an intermediate school certificate have a score of 1. |
-| Education Fachabitur |  Respondents with a vocational diploma certificate have a score of 1. |
+| Education Fachabitur | Respondents with a vocational diploma certificate have a score of 1. |
 | Education Abitur | Respondents with a general qualification for university entrance have a score of 1. |
 | Income | Net equivalent income. Household income was weighted according to the new OECD scale. As the household income in the data sets, with the exception of GLES2009, was only available in categorical form, the income categories were transformed into a metric scale beforehand. The recommendations published by GESIS, which are available at https://www.gesis.org/missy/files/documents/MZ/Auswertungsbeispiel_BerechnungDes%C3%84quivalenzeinkommens.pdf, were followed. |
 | Party Identification | Dummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0. |
