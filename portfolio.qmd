@@ -70,6 +70,16 @@ The economist Maurice Höfgen often points out that there are more unemployed pe
 </iframe>
 
 ## Row 3
+The model can be written as:
+
+$$
+Y_{ij} = \beta_0 + \beta_1 X_{ij} + \alpha_{j} + \varepsilon_{ij},
+$$
+
+
+Here, $Y_{ij}$ is total unemployment for observation $i$ in year $j$, $X_{ij}$ is total vacancies, $\beta_0$ and $\beta_1$ are fixed-effect parameters, $\alpha_{j}$ is a year-specific random intercept, and $\varepsilon_{ij}$ is the idiosyncratic error.
+
+
 
 Since time series data typically have a problem with autocorrelation—and that is also the case here—I used a random intercept model. The residuals are not normally distributed and there may be slight heteroscedasticity. To avoid problems with estimating the confidence intervals, I reported bootstrap CIs in the regression table below.
 
