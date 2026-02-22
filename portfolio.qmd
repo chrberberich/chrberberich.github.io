@@ -29,7 +29,7 @@ library(ggplot2)
 
 ```{r, echo=FALSE}
 value_box(
-  title = "Marginal R\u00B2",
+  title = "Marginal R²",
   value = "0.49",
   showcase = bsicons::bs_icon("graph-up"),
   theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
@@ -41,7 +41,7 @@ value_box(
 
 ```{r, echo=FALSE}
 value_box(
-  title = "Conditional R\u00B2",
+  title = "Conditional R²",
   value = "0.84",
   showcase = bsicons::bs_icon("laptop"),
   theme = value_box_theme(bg = "#eeee4", fg = "#00000"),
@@ -86,18 +86,66 @@ Since time series data typically have a problem with autocorrelation—and that 
 ## Row 4
 
 <div class="table-container" style="color: white;">
-<table style="text-align:center;">
+<table style="text-align:center; width:100%; border-collapse:collapse;">
+
   <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
-  <tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
-  <tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
-  <tr><td style="text-align:left"></td><td>total_unemp</td></tr>
+  <tr><td></td><td><em>Dependent variable:</em></td></tr>
+  <tr><td></td><td style="border-bottom: 1px solid black">total_unemp</td></tr>
+
   <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+
+  <!-- Fixed effects header -->
+  <tr>
+    <td colspan="2" style="text-align:left; font-weight:bold;">
+      Fixed effects
+    </td>
+  </tr>
+  <!-- line under Fixed effects -->
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+
+  <!-- Coefficients -->
   <tr><td style="text-align:left">total_vac</td><td>-0.687</td></tr>
-  <tr><td style="text-align:left"></td><td>[-0.913, -0.455]</td></tr>
-  <tr><td style="text-align:left"></td><td></td></tr>
+  <tr><td></td><td>[-0.913, -0.455]</td></tr>
+  <tr><td style="height:6px;"></td><td></td></tr>
+
   <tr><td style="text-align:left">Constant</td><td>3308</td></tr>
-  <tr><td style="text-align:left"></td><td>[3078, 3526]</td></tr>
-  <tr><td style="text-align:left"></td><td></td></tr>
+  <tr><td></td><td>[3078, 3526]</td></tr>
+
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+
+  <!-- Random effects header -->
+  <tr>
+    <td colspan="2" style="text-align:left; font-weight:bold;">
+      Random effects
+    </td>
+  </tr>
+  <!-- line under Random effects -->
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+
+  <!-- Random effects column labels -->
+  <tr>
+    <td style="text-align:left; font-style:italic;">Groups</td>
+    <td style="text-align:center; font-style:italic;">Std. Dev.</td>
+  </tr>
+
+  <!-- Random effects rows -->
+  <tr>
+    <td style="text-align:left;">year (Intercept)</td>
+    <td style="text-align:center;">168.8</td>
+  </tr>
+  <tr>
+    <td style="text-align:left;">Residual</td>
+    <td style="text-align:center;">114.8</td>
+  </tr>
+
+  <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
+
+  <!-- Model statistics -->
+  <tr>
+    <td colspan="2" style="text-align:left; font-weight:bold; padding-top:6px;">
+      Model statistics
+    </td>
+  </tr>
   <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
   <tr><td style="text-align:left">Marginal R²</td><td>0.487</td></tr>
   <tr><td style="text-align:left">Conditional R²</td><td>0.838</td></tr>
@@ -105,10 +153,21 @@ Since time series data typically have a problem with autocorrelation—and that 
   <tr><td style="text-align:left">Log Likelihood</td><td>-369.605</td></tr>
   <tr><td style="text-align:left">Akaike Inf. Crit.</td><td>747.211</td></tr>
   <tr><td style="text-align:left">Bayesian Inf. Crit.</td><td>755.452</td></tr>
+
   <tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr>
-  <tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right">Coefficients and 95% confidence intervals estimated using 2000 bootstrap resamples.</td></tr>
+
+  <tr>
+    <td style="text-align:left"><em>Note:</em></td>
+    <td style="text-align:right">
+      Coefficients and 95% confidence intervals estimated using 2000 bootstrap resamples.
+    </td>
+  </tr>
+
 </table>
 </div>
+
+
+
 # Global GDP Comparison
 
 ## Über dieses Projekt {.sidebar position="left" width="30%"}
