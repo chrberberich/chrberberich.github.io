@@ -4,12 +4,6 @@ listing:
   contents: blog_qmd/
   type: default
   sort: "date desc"
-about:
-  template: jolla
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/chrberberich
 format:
   html:
     css: styles.css
