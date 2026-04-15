@@ -62,4 +62,60 @@ svg.aa-SubmitIcon {
     color: #000000 !important;
   }
 
+/* Breite der Theme-Container */
+
+.quarto-about-jolla,
+.quarto-container.page-layout-article {
+  max-width: 1200px !important;
+}
+
+.quarto-container.page-layout-article {
+  grid-template-columns: 1fr !important;
+}
+
+/* Ab hier geht es um die Liste auf der Seite Articles */
+
+
+.quarto-post {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+}
+
+
+/* linker Bereich (Titel) */
+.quarto-post .body {
+  flex: 2;          /* <-- mehr Platz für Titel */
+  min-width: 0;
+}
+
+/* rechter Bereich (Beschreibung) */
+.quarto-post .listing-description {
+  flex: 3;          /* <-- noch mehr Platz für Beschreibung */
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Titel */
+.quarto-post .listing-title {
+  margin: 0;
+  text-align: left;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* Paragraph Fix */
+.quarto-post .listing-description p {
+  margin: 0;
+}
+
+.quarto-listing-container-default {
+  max-width: 1200px !important;
+  width: 100%;
+}
+
 

@@ -1,0 +1,12 @@
+[
+  {
+    "listing": "/stuff.html",
+    "items": []
+  },
+  {
+    "listing": "/articles.html",
+    "items": [
+      "/blog_qmd/KI-Hochschulstudium.html"
+    ]
+  }
+]

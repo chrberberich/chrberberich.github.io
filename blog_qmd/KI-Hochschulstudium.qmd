@@ -1,0 +1,10 @@
+---
+title: "KI im Hochschulstudium"
+date: 2026-04-13
+description: "A critical analysis of AI in higher education."
+---
+
+<iframe src="text/KI-Hochschulstudium.pdf" width="100%" height="600px"></iframe>
+
+
+

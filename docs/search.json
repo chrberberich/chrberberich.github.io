@@ -9,9 +9,9 @@
   {
     "objectID": "stuff.html",
     "href": "stuff.html",
-    "title": "Other Stuff",
+    "title": "Articles",
     "section": "",
-    "text": "Nothing here :("
+    "text": "docs/text/ KI-Hochschulstudium.qmd KI-Hochschulstudium.pdf\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -53,19 +53,19 @@
     "href": "portfolio.html",
     "title": "Unemployment and Vacancies",
     "section": "",
-    "text": "Data Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrelation Coefficient\n-0.71\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR-squared\n0.51\n\n\n\n\n\n\n\n\n\n\n\nUnemployment and job vacancies\nThe economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model."
+    "text": "Attaching package: 'bslib'\n\n\nThe following object is masked from 'package:utils':\n\n    page"
   },
   {
     "objectID": "portfolio.html#row-1",
     "href": "portfolio.html#row-1",
     "title": "Unemployment and Vacancies",
-    "section": "",
-    "text": "Data Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\n\n\n\n\n\n\n\n\nCorrelation Coefficient\n-0.71\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR-squared\n0.51"
+    "section": "Row 1",
+    "text": "Row 1\n\nC1\n\n\n\nData Scource\n\n\n\n\nBundesargentur für Arbeit\n\n\nInstitut für Arbeitsmarkt- und Berufsforschung\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nMarginal R²\n0.49\n\n\n\n\n\n\n\n\n\nC2\n\n\n\n\n\n\n\nConditional R²\n0.84"
   },
   {
     "objectID": "portfolio.html#row-2",
     "href": "portfolio.html#row-2",
-    "title": "Welcome",
+    "title": "Unemployment and Vacancies",
     "section": "Row 2",
     "text": "Row 2\n\ncolumn 1\n\n\n\n\ncolumn 2"
   },
@@ -73,8 +73,8 @@
     "objectID": "portfolio.html#row-1-1",
     "href": "portfolio.html#row-1-1",
     "title": "Unemployment and Vacancies",
-    "section": "",
-    "text": "Unemployment and job vacancies\nThe economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model."
+    "section": "Row 1",
+    "text": "Row 1\nUnemployment and job vacancies\nThe economist Maurice Höfgen often points out that there are more unemployed people than jobs that can be filled immediately. I took this as an opportunity to investigate the relationship between vacancies and the number of unemployed. For the analysis, I matched the official unemployment statistics from Bundesargentur für Arbeit with a data set from the Institut für Arbeitsmarkt- und Berufsforschung (IAB). The linear regression model explains 51% (see R-squared) of the variance of the absolute number of unemployed with job vacancies as the independent variable. Such strong evidenz are rarely found in the social sciences. It also shows that the neoclassical labor market model does not work, because unemployment is strongly negatively correlated with vacancies at the macro level (see correlation coefficient). The dashboard shows the correlation coefficient, the R-squared, a plot of the trend data and a plot of the regression model."
   },
   {
     "objectID": "portfolio.html#dynamische-graphiken",
@@ -116,6 +116,34 @@
     "href": "portfolio.html#row-3",
     "title": "Unemployment and Vacancies",
     "section": "Row 3",
-    "text": "Row 3\nExplenation of the variables\n\n\n\n\n\n\n\nVariable\nExplenation\n\n\n\n\nDependent variable\n\n\n\nCDU/CSU\nThe dummy variable takes the value 1 if the respondents stated that they had voted for the CDU or CSU in the last election. If a different party or non-voters are indicated, the variable takes the value 0.\n\n\nPredictors\n\n\n\nMicro increase\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has improved in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMicro decrease\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has deteriorated in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro increase\nDummy variable assumes the value 1 if the respondent assumes that the general economy has increased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro decrease\nDummy variable assumes the value 1 if the respondent assumes that the general economy situation has decreased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nGender\nDummy variable that has the value 1 if the respondent is male. Otherwise, the value is 0. The diverse category only exists in the GLES 2021, but there are no people in this category.\n\n\nAge\nCategorical variable with the following age categories: (1) 18 to under 23 years (2) 23 to under 28 years (3) 28 to under 33 years (4) 33 to under 38 years (5) 38 to under 43 years (6) 43 to under 48 years (7) 48 to under 53 years (8) 53 to under 58 years (9) 58 to under 63 years (10) 63 to under 68 years (11) 68 to under 73 years (12) 78 to under 83 years (13) 83 to under 88 years (14) 88 to under 93 years (15) Over 93 years\n\n\nEast\nDummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0.\n\n\nEducation\nCategorical variable.\n\n\nIncome\nIncome refers to the total household income and is divided into the following categories: (1) less than 500 euros (2) 500 to under 750 euros (3) 750 to under 1000 euros (4) 1000 to under 1250 euros (5) 1250 to under 1500 euros (6) 1500 to under 2000 euros (7) 2000 to under 2500 euros (8) 2500 to under 3000 euros (9) 3000 to under 4000 euros (10) 4000 to under 5000 euros (11) 5000 to under 7500 euros (12) 7500 to under 10000 euros (13) 10000 euros and more\n\n\nCohabitors\nNumber of household members. Category 0 includes people who did not provide any information.\n\n\nIdentification\nDummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0."
+    "text": "Row 3\nThe model can be written as:\n\\[\nY_{ij} = \\beta_0 + \\beta_1 X_{ij} + \\alpha_{j} + \\varepsilon_{ij},\n\\]\nHere, \\(Y_{ij}\\) is total unemployment for observation \\(i\\) in year \\(j\\), \\(X_{ij}\\) is total vacancies, \\(\\beta_0\\) and \\(\\beta_1\\) are fixed-effect parameters, \\(\\alpha_{j}\\) is a year-specific random intercept, and \\(\\varepsilon_{ij}\\) is the idiosyncratic error.\nSince time series data typically have a problem with autocorrelation—and that is also the case here—I used a random intercept model. The residuals are not normally distributed and there may be slight heteroscedasticity. To avoid problems with estimating the confidence intervals, I reported bootstrap CIs in the regression table below."
+  },
+  {
+    "objectID": "KI-Hochschulstudium.html",
+    "href": "KI-Hochschulstudium.html",
+    "title": "KI im Hochschulstudium",
+    "section": "",
+    "text": "Download PDF"
+  },
+  {
+    "objectID": "portfolio.html#row-4",
+    "href": "portfolio.html#row-4",
+    "title": "Unemployment and Vacancies",
+    "section": "Row 4",
+    "text": "Row 4\n\n\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\ntotal_unemp\n\n\n\n\n\n\n\n\n\nFixed effects\n\n\n\n\n\n\n\n\n\n\ntotal_vac\n\n\n-0.687\n\n\n\n\n\n\n[-0.913, -0.455]\n\n\n\n\n\n\n\n\n\n\nConstant\n\n\n3308\n\n\n\n\n\n\n[3078, 3526]\n\n\n\n\n\n\n\n\n\nRandom effects\n\n\n\n\n\n\n\n\n\n\nGroups\n\n\nStd. Dev.\n\n\n\n\n\nyear (Intercept)\n\n\n168.8\n\n\n\n\nResidual\n\n\n114.8\n\n\n\n\n\n\n\n\n\nModel statistics\n\n\n\n\n\n\n\n\nMarginal R²\n\n\n0.487\n\n\n\n\nConditional R²\n\n\n0.838\n\n\n\n\nObservations\n\n\n58\n\n\n\n\nLog Likelihood\n\n\n-369.605\n\n\n\n\nAkaike Inf. Crit.\n\n\n747.211\n\n\n\n\nBayesian Inf. Crit.\n\n\n755.452\n\n\n\n\n\n\n\n\nNote:\n\n\nCoefficients and 95% confidence intervals estimated using 2000 bootstrap resamples."
+  },
+  {
+    "objectID": "portfolio.html#row-3-1",
+    "href": "portfolio.html#row-3-1",
+    "title": "Unemployment and Vacancies",
+    "section": "Row 3",
+    "text": "Row 3\nExplenation of the variables\n\n\n\n\n\n\n\nVariable\nExplenation\n\n\n\n\nDependent variable\n\n\n\nCDU/CSU\nThe dummy variable takes the value 1 if the respondents stated that they had voted for the CDU or CSU in the last election. If a different party or non-voters are indicated, the variable takes the value 0.\n\n\nPredictors\n\n\n\nMicro increase\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has improved in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMicro decrease\nDummy variable assumes the value 1 if the respondent states that their personal economic situation has deteriorated in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro increase\nDummy variable assumes the value 1 if the respondent assumes that the general economy has increased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nMacro decrease\nDummy variable assumes the value 1 if the respondent assumes that the general economy situation has decreased in the last one to two years. Reference 0 if the situation has not changed.\n\n\nGender\nDummy variable that has the value 1 if the respondent is male. Otherwise, the value is 0. The diverse category only exists in the GLES 2021, but there are no people in this category.\n\n\nAge\nAge measured in years\n\n\nEast\nDummy variable that has the value 1 if the respondent lives in east Germany. Otherwise the value is 0.\n\n\nEducation Realschule\nRespondents with an intermediate school certificate have a score of 1.\n\n\nEducation Fachabitur\nRespondents with a vocational diploma certificate have a score of 1.\n\n\nEducation Abitur\nRespondents with a general qualification for university entrance have a score of 1.\n\n\nIncome\nNet equivalent income. Household income was weighted according to the new OECD scale. As the household income in the data sets, with the exception of GLES2009, was only available in categorical form, the income categories were transformed into a metric scale beforehand. The recommendations published by GESIS, which are available at https://www.gesis.org/missy/files/documents/MZ/Auswertungsbeispiel_BerechnungDes%C3%84quivalenzeinkommens.pdf, were followed.\n\n\nParty Identification\nDummy variable that takes on the value 1 if the respondent can identify with the CDU and/or CSU. If this is not the case, the value is 0."
+  },
+  {
+    "objectID": "articles.html",
+    "href": "articles.html",
+    "title": "Articles",
+    "section": "",
+    "text": "KI im Hochschulstudium\n\n\nA critical analysis of AI in higher education.\n\n\n\n\n\nApr 13, 2026\n\n\n\n\n\nNo matching items"
   }
 ]
